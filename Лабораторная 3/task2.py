@@ -3,7 +3,7 @@
 
 participants_first_group = "Иванов|Петров|Сидоров"
 participants_second_group = "Петров|Сидоров|Смирнов"
-def find_common_participants(group1, group2, delimiter='|'):
+def find_common_participants(group1, group2, delimiter=","):
     group1_list = group1.split(delimiter)
     group2_list = group2.split(delimiter)
 
@@ -17,4 +17,4 @@ def find_common_participants(group1, group2, delimiter='|'):
 
 
 # TODO Провеьте работу функции с разделителем отличным от запятой
-print(find_common_participants(participants_first_group,participants_second_group))
+print(find_common_participants(participants_first_group,participants_second_group, delimiter="|"))
