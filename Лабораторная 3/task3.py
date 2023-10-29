@@ -18,7 +18,7 @@ def calculate_frequency(letter_count):
 
     for letter, count in letter_count.items():
         frequency = count / total_letters
-        frequency_dict[letter] = round(frequency, 2)
+        frequency_dict[letter] = format(frequency, ".2f")
 
     return frequency_dict
 
